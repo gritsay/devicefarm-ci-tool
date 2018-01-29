@@ -11,4 +11,4 @@ script:
  - go test -race -v $(go list ./... | grep -v /vendor/)
 
 after_success:
- - curl --request POST "https://goreportcard.com/checks" --data "repo=github.com/artemnikitin/devicefarm-ci-tool"
+ - curl --request POST "https://goreportcard.com/checks" --data "repo=github.com/gritsay/devicefarm-ci-tool"
