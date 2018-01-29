@@ -12,6 +12,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/devicefarm"
 	"github.com/aws/aws-sdk-go/service/devicefarm/devicefarmiface"
+	"fmt"
 )
 
 // DeviceFarmRun represents parameters for utility runtime
@@ -129,7 +130,8 @@ func (p *DeviceFarmRun) GetUploadStatus(arn string) string {
 	}
 	resp, err := p.Client.GetUpload(params)
 	errors.Validate(err, "Failed to get status of upload")
-	log.Println("Status of upload:", *resp.Upload.Status)
+	//log.Println("Status of upload:", *resp.Upload.Status)
+	log.Println(fmt.Sprintf("Status of upload= %v, response=%v, data=%v", *resp.Upload.Status, *resp, *resp.Upload))
 	return *resp.Upload.Status
 }
 
