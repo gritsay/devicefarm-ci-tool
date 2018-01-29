@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/artemnikitin/devicefarm-ci-tool/model"
+	"github.com/gritsay/devicefarm-ci-tool/model"
 	"github.com/aws/aws-sdk-go/service/devicefarm"
 	"github.com/aws/aws-sdk-go/service/devicefarm/devicefarmiface"
 	"github.com/fatih/structs"

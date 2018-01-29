@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/artemnikitin/devicefarm-ci-tool/errors"
+	"github.com/gritsay/devicefarm-ci-tool/errors"
 	"github.com/aws/aws-sdk-go/service/devicefarm"
 )
 

@@ -4,8 +4,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/artemnikitin/devicefarm-ci-tool/model"
-	"github.com/artemnikitin/devicefarm-ci-tool/tools"
+	"github.com/gritsay/devicefarm-ci-tool/model"
+	"github.com/gritsay/devicefarm-ci-tool/tools"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/devicefarm"
 	"github.com/fatih/structs"

@@ -3,7 +3,7 @@ package service
 import (
 	"sync"
 
-	"github.com/artemnikitin/devicefarm-ci-tool/model"
+	"github.com/gritsay/devicefarm-ci-tool/model"
 	"github.com/aws/aws-sdk-go/service/devicefarm"
 	"github.com/aws/aws-sdk-go/service/devicefarm/devicefarmiface"
 )
